@@ -1,17 +1,20 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
-    <div className="relative h-full lg:h-[140vh]">
-      <main className="relative pb-24 pl-4 lg:space-y-24 lg:pl-16">
+    <div className="relative h-screen lg:h-[140vh] overflow-hidden bg-gradient-to-b">
+      <main className="relative pb-24 pl-4 lg:pl-16">
         <div className="flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12">
-          <div className="absolute flex flex-col left-0 top-0 -z-10 h-[95vh] w-screen bg-black"></div>
+          <div className="absolute flex flex-col left-0 top-0 -z-10 h-[95vh] w-screen bg-black">
+            <Image src='/banner.png' alt='maid' fill={true} className='h-[65vh] object-top lg:h-[95vh]'/>
+          </div>
 
           <h1 className="text-lg font-bold md:text-4xl lg:text-7xl">
-            The Witcher: Monster Slayer
+            MAID
           </h1>
 
           <p className="text-shadow-md max-w-xs text-xs nd:max-w-lg md:text-lg lg:max-w-2xl">
-            The Witcher: Monster Slayer is a location-based augmented-reality RPG that challenges
-            you to become a professional monster hunter.
+            In a future where humans can transfer their minds to robots, a cop and
           </p>
         </div>
 
